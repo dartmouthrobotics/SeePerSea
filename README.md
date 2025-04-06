@@ -4,15 +4,16 @@ Our paper is currently under review for IEEE Transaction on Field Robotics (T-FR
 
 __our dataset website__:  https://seepersea.github.io/
 
-```
-This paper introduces the first publicly accessible labeled multi-modal perception dataset for autonomous maritime navigation, focusing on in-water obstacles within the aquatic environment to enhance situational awareness for Autonomous Surface Vehicles (ASVs). This dataset, collected over 4 years and consisting of diverse objects encountered under varying environmental conditions, aims to bridge the research gap in ASVs by providing a multi-modal, annotated, and ego-centric perception dataset, for object detection and classification. We also show the applicability of the proposed dataset by training deep learning-based open-source perception algorithms that have shown success in the autonomous ground vehicle domain. We expect that our dataset will contribute to the development of future marine autonomy pipelines and marine (field) robotics.
-```
+
+This paper introduces the first publicly accessible labeled multi-modal perception dataset 
+for autonomous maritime navigation, focusing on in-water obstacles within the aquatic environment to enhance situational awareness for Autonomous Surface Vehicles (ASVs). This dataset, collected over 4 years and consisting of diverse objects encountered under varying environmental conditions, aims to bridge the research gap in ASVs by providing a multi-modal, annotated, and ego-centric perception dataset, for object detection and classification. We also show the applicability of the proposed dataset by training deep learning-based open-source perception algorithms that have shown success in the autonomous ground vehicle domain. We expect that our dataset will contribute to the development of future marine autonomy pipelines and marine (field) robotics.
+
 
 ![image info](./img/t-fr-busan.gif)
 
 
 ## Authors
-__Jeong, Mingi* and Chadda, Arihant*__ and Ren, Ziang and Zhao, Luyang and Liu, Haowen and Roznere, 
+Jeong, Mingi* and Chadda, Arihant* and Ren, Ziang and Zhao, Luyang and Liu, Haowen and Roznere, 
 Monika and Zhang, Aiwei and Jiang, Yitao and Achong, Sabriel and Lensgraf, Samuel and Alberto Quattrini Li
 
 \* these authors equally contribbuted.
@@ -35,9 +36,9 @@ The following environment is tested for the GUI viewer for the sample dataset.
 * python 3.8.10
 
 ## Folder Explanation
-* __camera_label__ (.json): object labels based on camera ([AnyLabeling](https://github.com/vietanhdev/anylabeling)
+* __camera_label__ (.json): object labels based on camera ( [AnyLabeling](https://github.com/vietanhdev/anylabeling)
 ) -- 6 digit file name per frame number 
-* __annotations__ (.json): object labels based on LiDAR ([3d-bat](https://github.com/walzimmer/3d-bat)
+* __annotations__ (.json): object labels based on LiDAR ( [3d-bat](https://github.com/walzimmer/3d-bat)
 ) -- 6 digit file name per frame number
 * __calib__ (.txt): camera intrinsic and lidar extrinsic calibbration info -- 6 digit file name per frame number
     * P2: camera matrix (3 by 3)
@@ -50,7 +51,7 @@ The following environment is tested for the GUI viewer for the sample dataset.
 __Note__: labels for testsplit are empty.
 
 ## How to explore our dataset with sample data
-1. Please download sample data from the following link: ([Google-drive](https://drive.google.com/drive/folders/1KuhWh7KSmzg62b88LVoL_3oEM5HWLCfe?usp=sharing)
+1. Please download sample data from the following link: ([ Google-drive](https://drive.google.com/drive/folders/1KuhWh7KSmzg62b88LVoL_3oEM5HWLCfe?usp=sharing)
 )
 2. git clone the current repo
 3. install dependencies
