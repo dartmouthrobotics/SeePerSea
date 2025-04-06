@@ -47,6 +47,8 @@ The following environment is tested for the GUI viewer for the sample dataset.
 * __undist_images__ (.png): undistorted camera images -- 6 digit file name per frame number
 * __motion_data__ (.csv): gps and imu data, respectively. Each sensor contains its own timestamp and correspondingly recorded data.
 
+__Note__: labels for testsplit are empty.
+
 ## How to explore our dataset with sample data
 1. Please download sample data from the following link: ([Google-drive](https://drive.google.com/drive/folders/1KuhWh7KSmzg62b88LVoL_3oEM5HWLCfe?usp=sharing)
 )
@@ -59,11 +61,12 @@ The following environment is tested for the GUI viewer for the sample dataset.
 8. If you want to move to the next frame, close the Open3D window and click the `Up` button.
 9. You are welcome to explore by the above procedures. 
 
-## TODO
-1. remove label
-2. timestamp
-3. gif for example loading
-4. sample data explanation
+![instruction](./img/instruction.gif)
+
+## sample data explain
+* _mascoma-20221007-1560_: many boats and buoys
+* _sunapee-20210916-1440_: 3 kayaks, near and moving, overlapping
+* _barbados-202302220530-200_: lots of buoys in line (more than 20)
 
 
 ## License

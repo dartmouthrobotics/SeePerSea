@@ -100,13 +100,12 @@ def visualize_pcd_and_bb(label_file, points_v):
     content_exist = False
     # 1. bounding boxes label
     with open(label_file, "r", encoding="utf-8") as f:
-        content = f.read().strip()
-        if content:
+        try:
             label_data = json.load(f)
             content_exist = True
-        else:
-            print("no content in label data -- test split")
-
+        except:
+            print("no content in lidar label data -- test split")
+        
     # json_file = open(label_file)
     # label_data = json.load(json_file)
 
@@ -253,7 +252,7 @@ class ImageViewerApp(QMainWindow):
                 label_data = json.load(f)
                 content_exist = True
             except:
-                print("no content in label data -- test split")
+                print("no content in image label data -- test split")
         
         if content_exist and label_data:
             for shape in label_data["shapes"]:
@@ -278,47 +277,6 @@ class ImageViewerApp(QMainWindow):
         # finish displaying image
         self.image = img_arr
         self.display_image()
-
-    def overlay_bounding_box_on_image_(self):
-        """main overlay function"""
-        if self.image is None:
-            return
-        # Reset to the original image
-        self.image = self.original_image.copy()
-        img_arr = self.image
-        content_exist = False
-
-        # load label
-        label_file = os.path.join(self.label_folder, self.label_files[self.current_index])
-        with open(label_file, "r", encoding="utf-8") as f:
-            label_data = json.load(f)
-            content_exist = True
-
-        if content_exist and label_data:
-            for shape in label_data["shapes"]:
-                coords = shape["points"]
-                class_ = shape["label"]
-
-                (x1, y1) = tuple([int(a) for a in coords[0]])
-                (x2, y2) = tuple([int(b) for b in coords[-1]])
-
-                cv2.rectangle(
-                    img_arr,
-                    (x1, y1),
-                    (x2, y2),
-                    color=CLASS_COLOR_LOOKUP[class_],
-                    thickness=2,
-                )
-
-                (w, h), _ = cv2.getTextSize(class_, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 1)
-
-        # img_arr = cv2.cvtColor(img_arr, cv2.COLOR_RGB2BGR) # not using as I don't use PIL
-
-        # finish displaying image
-        self.image = img_arr
-        self.display_image()
-
-
 
 
     def on_show_3d(self):
