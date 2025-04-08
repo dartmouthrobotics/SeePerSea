@@ -16,7 +16,7 @@ for autonomous maritime navigation, focusing on in-water obstacles within the aq
 Jeong, Mingi* and Chadda, Arihant* and Ren, Ziang and Zhao, Luyang and Liu, Haowen and Roznere, 
 Monika and Zhang, Aiwei and Jiang, Yitao and Achong, Sabriel and Lensgraf, Samuel and Alberto Quattrini Li
 
-\* these authors equally contribbuted.
+\* these authors equally contributed.
 
 ## Maintainer
 * Mingi Jeong: mingi.jeong.gr@dartmouth.edu
@@ -54,7 +54,7 @@ __Note__: labels for testsplit are empty.
 1. Please download sample data from the following link: ([ Google-drive](https://drive.google.com/drive/folders/1KuhWh7KSmzg62b88LVoL_3oEM5HWLCfe?usp=sharing)
 )
 2. git clone the current repo
-3. install dependencies (we recommend [Poetry](https://python-poetry.org/) and have included a `pyproject.toml` for convenience. 
+3. install dependencies (we recommend [Poetry](https://python-poetry.org/) and have included a `pyproject.toml` for convenience; run `poetry shell` and then `poetry install`). 
 4. `python view_images.py`
 5. Click the `Load Folder` button to load a sample sequence (_mascoma-20221007-1560_)
 6. You can see a sample image with groudtruth bounding boxes overlaid.
