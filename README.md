@@ -54,13 +54,13 @@ __Note__: labels for testsplit are empty.
 1. Please download sample data from the following link: ([ Google-drive](https://drive.google.com/drive/folders/1KuhWh7KSmzg62b88LVoL_3oEM5HWLCfe?usp=sharing)
 )
 2. git clone the current repo
-3. install dependencies
+3. install dependencies (we recommend [Poetry](https://python-poetry.org/) and have included a `pyproject.toml` for convenience. 
 4. `python view_images.py`
 5. Click the `Load Folder` button to load a sample sequence (_mascoma-20221007-1560_)
 6. You can see a sample image with groudtruth bounding boxes overlaid.
 7. Click `Show 3D View` to visualize point clouds also with groudtruth bounding boxes. Open3D window will pop-up.
 8. If you want to move to the next frame, close the Open3D window and click the `Up` button.
-9. You are welcome to explore by the above procedures. 
+9. You are welcome to explore the dataset using the `Up`, `Down`, and `Show 3D View` as well as load other sequences to explore the dataset. 
 
 ![instruction](./img/instruction.gif)
 

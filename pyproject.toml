@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "seepersea"
+version = "0.1.0"
+description = "A tool to visualize the the LiDAR and Image data in the SeePerSea dataset."
+authors = ["Mingi Jeong <mingi.jeong.gr@dartmouth.edu>", "Ari Chadda <ari.chadda@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.8.*"
+PyQt5 = "5.14.1"
+Open3D = "0.13.0"
+Numpy = "1.24.4"
+opencv-python = "4.10.0.84"
+PyQt5-sip = "12.15"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
