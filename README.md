@@ -1,12 +1,11 @@
 # SeePerSea
 Welcome to the SeePerSea Dataset from the Dartmouth Reality and Robotics Lab!
-Our paper is currently under review for IEEE Transaction on Field Robotics (T-FR)!
+Our paper is accepted to IEEE Transaction on Field Robotics ([T-FR](https://ieeexplore.ieee.org/document/11142348))!
 
 __our dataset website__:  https://seepersea.github.io/
 
 
-This paper introduces the first publicly accessible labeled multi-modal perception dataset 
-for autonomous maritime navigation, focusing on in-water obstacles within the aquatic environment to enhance situational awareness for Autonomous Surface Vehicles (ASVs). This dataset, collected over 4 years and consisting of diverse objects encountered under varying environmental conditions, aims to bridge the research gap in ASVs by providing a multi-modal, annotated, and ego-centric perception dataset, for object detection and classification. We also show the applicability of the proposed dataset by training deep learning-based open-source perception algorithms that have shown success in the autonomous ground vehicle domain. We expect that our dataset will contribute to the development of future marine autonomy pipelines and marine (field) robotics.
+This paper introduces the first publicly accessible labeled multi-modal perception dataset for autonomous maritime navigation, focusing on in-water obstacles within the aquatic environment to enhance situational awareness for Autonomous Surface Vehicles (ASVs). This dataset, collected over 4 years and consisting of diverse objects encountered under varying environmental conditions, aims to bridge the research gap in ASVs by providing a multi-modal, annotated, and ego-centric perception dataset, for object detection and classification. We also show the applicability of the proposed dataset by training deep learning-based open-source perception algorithms that have shown success in the autonomous ground vehicle domain. We expect that our dataset will contribute to the development of future marine autonomy pipelines and marine (field) robotics.
 
 
 ![image info](./img/t-fr-busan.gif)
@@ -25,6 +24,20 @@ Monika and Zhang, Aiwei and Jiang, Yitao and Achong, Sabriel and Lensgraf, Samue
 ## Contribution
 * SeePerSea, the first LiDAR-camera dataset in aquatic environments with object labels across two modalities, will foster the development of robust fusion perception pipelines for ASV autonomy.
 * SeePerSea, covering various environments and day conditions, will help ensure that developed perception pipelines are increasingly generalizable.
+
+## Citation
+```
+@ARTICLE{jeong-tfr-2025,
+  author={Jeong, Mingi and Chadda, Arihant and Ren, Ziang and Zhao, Luyang and Liu, Haowen and Zhang, Aiwei and Jiang, Yitao and Achong, Sabriel and Lensgraf, Samuel and Roznere, Monika and Li, Alberto Quattrini},
+  journal={IEEE Transactions on Field Robotics}, 
+  title={SeePerSea: Multimodal Perception Dataset of In-Water Objects for Autonomous Surface Vehicles}, 
+  year={2025},
+  volume={2},
+  number={},
+  pages={737-752},
+  keywords={Laser radar;Cameras;Sensors;Object detection;Robot vision systems;Radar tracking;Navigation;Global Positioning System;Calibration;Training;Autonomous surface vehicle (ASV);maritime perception;multimodal dataset;obstacle classification;obstacle detection;situational awareness},
+  doi={10.1109/TFR.2025.3602937}}
+```
 
 ## Dependencies
 The following environment is tested for the GUI viewer for the sample dataset.
