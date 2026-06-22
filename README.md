@@ -78,7 +78,7 @@ If you are running for an algorithm following KiTTi input (mmdetection3d, OpenPC
 __Note__: labels for testsplit are empty.
 
 ## How to explore our dataset with sample data
-1. Please download sample data from the following link: ([ Google-drive](https://drive.google.com/drive/folders/1KuhWh7KSmzg62b88LVoL_3oEM5HWLCfe?usp=sharing)
+1. Please download sample data from the following link: ([ Google-drive](https://drive.google.com/drive/folders/1w2WN3PNCfgZnELCBmSzNyGrrN_6ufLBF?usp=sharing)
 )
 2. git clone the current repo
 3. install dependencies (we recommend [Poetry](https://python-poetry.org/) and have included a `pyproject.toml` for convenience; run `poetry shell` and then `poetry install`). 
